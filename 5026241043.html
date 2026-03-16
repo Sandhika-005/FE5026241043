@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pertemuan 4_5026241043_PEMBUATAN LAYOUT DENGAN GRID SYSTEM MENGGUNAKAN BOOTSTRAP 4</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            background-color: #c6c6c6; 
+            overflow: hidden; 
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            font-family: 'Open Sans', sans-serif;
+            padding: 30px; 
+            box-sizing: border-box;
+        }
+
+        .content-wrapper {
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            border-radius: 0; 
+            box-shadow: none; 
+            overflow: hidden; 
+        }
+
+        .main-content {
+            flex: 1; 
+            display: flex;
+            align-items: center; 
+            padding: 5px 0; 
+        }
+
+        h1.display-title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            letter-spacing: 5px;
+            font-size: 2.5rem; 
+            color: #000000;
+            margin-bottom: 35px; 
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .testimonial-img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            background-color: #eee;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            color: #000;
+            font-size: 1.2rem; 
+            line-height: 1.5;
+            margin-bottom: 8px;
+        }
+
+        .client-name {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin-bottom: 0;
+            font-size: 1.15rem; 
+        }
+
+        .client-role {
+            font-size: 0.95rem; 
+            color: #555;
+            font-weight: 600;
+        }
+
+        .logo-section {
+            background-color: #979a9e;
+            padding: 25px 0; 
+            width: 100%;
+        }
+
+        .logo-row {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
+
+        .logo-item {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .client-logo {
+            height: 95px; 
+            width: auto;
+            max-width: 95%;
+            object-fit: contain; 
+            mix-blend-mode: multiply;
+            transition: none;
+        }
+
+        .client-logo:hover {
+            transform: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="content-wrapper">
+        
+        <div class="main-content">
+            <div class="container">
+                <h1 class="display-title">OUR CLIENTS LOVE US</h1>
+
+                <div class="row">
+                    <div class="col-md-6 mb-4 px-lg-5">
+                        <div class="media align-items-center">
+                            <img src="https://awsimages.detik.net.id/visual/2019/10/27/47aabba0-560d-4521-a62c-b730765ddb90_169.jpeg?w=650&q=80" class="mr-4 testimonial-img">
+                            <div class="media-body">
+                                <p class="testimonial-text">"Sistem grid pada platform ini sangat membantu skalabilitas tampilan antarmuka kami secara efisien."</p>
+                                <h6 class="client-name">Nadiem Makarim</h6>
+                                <p class="client-role">Founder Gojek</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4 px-lg-5">
+                        <div class="media align-items-center">
+                            <img src="https://img.idxchannel.com/media/700/images/idx/2023/12/21/Total_Saham_William_Tanuwijaya_di_Tokopedia.jpg" class="mr-4 testimonial-img">
+                            <div class="media-body">
+                                <p class="testimonial-text">"Pemanfaatan framework yang tepat memungkinkan pengalaman belanja yang lebih mulus bagi seluruh UMKM."</p>
+                                <h6 class="client-name">William Tanuwijaya</h6>
+                                <p class="client-role">Founder Tokopedia</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4 px-lg-5">
+                        <div class="media align-items-center">
+                            <img src="https://aws-images-prod.sindonews.net/dyn/600/pena/sindo-article/original/2022/10/05/ferry%20unardi%202.jpg" class="mr-4 testimonial-img">
+                            <div class="media-body">
+                                <p class="testimonial-text">"Kecepatan rendering dan tata letak yang bersih adalah kunci. Solusi desain ini menjawab kebutuhan pengguna."</p>
+                                <h6 class="client-name">Ferry Unardi</h6>
+                                <p class="client-role">CEO Traveloka</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4 px-lg-5">
+                        <div class="media align-items-center">
+                            <img src="https://jhonnythiodoran.id/wp-content/uploads/2025/11/Gizmologi.jpg" class="mr-4 testimonial-img">
+                            <div class="media-body">
+                                <p class="testimonial-text">"Kreativitas dalam penyajian layout sangat krusial dalam membangun kepercayaan di era digital."</p>
+                                <h6 class="client-name">Achmad Zaky</h6>
+                                <p class="client-role">Founder Bukalapak</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="logo-section">
+            <div class="container">
+                <div class="logo-row">
+                    <div class="logo-item"><img src="Logo_Pertemuan%204/gojek.png" class="client-logo"></div>
+                    <div class="logo-item"><img src="Logo_Pertemuan%204/tokopedia.png" class="client-logo"></div>
+                    <div class="logo-item"><img src="Logo_Pertemuan%204/traveloka.png" class="client-logo"></div>
+                    <div class="logo-item"><img src="Logo_Pertemuan%204/bukalapak.png" class="client-logo"></div>
+                    <div class="logo-item"><img src="Logo_Pertemuan%204/shopee.png" class="client-logo"></div>
+                    <div class="logo-item"><img src="Logo_Pertemuan%204/blibli.png" class="client-logo"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
